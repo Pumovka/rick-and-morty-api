@@ -1,0 +1,10 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page_info {
+  margin: 0 10px;
+  font-size: 1.2em;
+}
