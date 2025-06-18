@@ -18,11 +18,14 @@ const CharacterList = ({ characters, searchQuery }: ICharacterList) => {
               src={character.image}
               alt={character.name}
             />
+            <div className="character_status">
+              <p> {character.status === "Dead" ? "Dead" : ""}</p>
+            </div>
           </div>
         ))
       ) : (
         <div className="undefinded">
-          {searchQuery ? "Такой персонаж не найден :( " : ""}
+          {searchQuery ? "This character was not found :( " : ""}
         </div>
       )}
     </div>
